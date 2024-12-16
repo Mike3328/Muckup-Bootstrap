@@ -1,0 +1,78 @@
+.navbar {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 14px;
+}
+
+.language, .login, .already, hr {
+    color: rgb(199, 18, 94);
+}
+
+.profile {
+    color: rgb(133, 99, 113);
+}
+
+i {
+    font-size: 20px;
+}
+
+.txt {
+    background-color: #d8dadb;
+}
+
+.txt h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    width: 60%;
+}
+
+.op {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    color: white;
+}
+
+.form {
+    border: 2px solid #d8dadb;
+    border-radius: 0.5rem;
+}
+
+input, hr {
+    border: 2px solid rgb(199, 18, 94);
+    border-radius: 2px;
+}
+
+.already {
+    text-decoration: none;
+}
+
+.ola {
+    width: 75%;
+    height: 3px;
+    background-color: rgb(199, 18, 94);
+    border-radius: 2px;
+}
+
+.btn {
+    border: none;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #d8dadb;
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+    .vis {
+        visibility: hidden;
+    }
+}
