@@ -1,4 +1,22 @@
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: rgb(62, 62, 63); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
 /*Navbar*/
+
+
 .navbar {
     background-color: rgb(31, 31, 31);
     color: white;
@@ -62,7 +80,83 @@ h2 {
     align-items: end;
 }
 
+/*Projects*/
 
+/*Header*/
+.project-btn {
+    background-color: rgb(199, 18, 94);
+    border: none;
+    font-size: 12px;
+}
+
+.project-btn:hover {
+    background-color: rgb(255, 39, 129);
+    border: 2px solid rgb(82, 80, 80);
+    transition-duration: 0.2s;
+}
+
+/*Filters*/
+.name, .date, .filter-btn {
+    border: 2px solid rgb(199, 18, 94);
+}
+
+.date {
+    color: transparent;
+    width: 100%;
+}
+
+.filter-btn {
+    font-size: 12px;
+}
+
+.filter-btn:hover {
+    background-color: rgb(199, 18, 94);
+    border: 1px solid #d8dadb;
+    transition-duration: 0.2s;
+}
+
+/*Table*/
+
+table {
+    background-color: #d8dadb;
+}
+
+tr {
+    font-size: 13px;
+}
+
+.pname {
+    width: 35%;
+    border-right: 3px solid white;
+}
+
+.c {
+    text-align: center;
+}
+
+.pdate {
+    border-right: 3px solid white;
+}
+
+.public {
+    width: 10%;
+    border-right: 3px solid white;
+}
+
+.pimg {
+    width: 15%;
+}
+
+.ch:checked {
+    background-color: rgb(199, 18, 94);
+}
+
+table img {
+    width: 15%;
+    cursor: pointer;
+    background-color: white;
+    padding: 2px;
+}
 
 /*Navbar dividers*/
 @media screen and (max-width: 767px) {
