@@ -1,0 +1,139 @@
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: rgb(62, 62, 63); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
+/*Background imagen*/
+
+body {
+    background-image: url("../Src/Home2.png");
+}
+
+/*Header*/
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divider {
+    width: 13%;
+    height: 2px;
+    background-color: rgb(199, 18, 94);
+    
+}
+
+.cancel {
+    width: 1rem;
+    cursor: pointer;
+}
+
+/*Info*/
+
+.question {
+    width: 1rem;
+    height: 1rem;
+}
+
+.pinfo {
+    font-size: 12px;
+    width: 80%;
+}
+
+span {
+    color: rgb(199, 18, 94);
+}
+
+/*Upload*/
+
+.upload {
+    border: 2px dashed #d8dadb;
+    width: 40%;
+    height: 10rem;
+}
+
+.up p {
+    font-family: 'Inter', sans-serif;
+}
+
+.up .choose p {
+    font-size: 13px;
+}
+
+button {
+    font-size: 11px;
+}
+
+.b1 {
+    width: 40%;
+    height: 2rem;
+    border: 2px solid rgb(199, 18, 94);
+}
+
+.div {
+    height: 2px;
+    width: 35%;
+    background-color: rgb(199, 18, 94);
+}
+
+.download {
+    color: rgb(199, 18, 94);
+    cursor: pointer;
+}
+
+/*Table*/
+
+table img {
+    background-color: white;
+}
+
+.edit {
+    width: 1px;
+}
+
+table th {
+    border-right: 4px solid white;
+}
+
+tbody tr td {
+    border-right: 4px solid transparent;
+}
+
+.urban td {
+    border-bottom: 1px solid black;
+}
+
+table img {
+    cursor: pointer;
+}
+
+/*Btns*/
+
+button:hover {
+    background-color: rgb(199, 18, 94);
+    color: white;
+    transition-duration: 0.3s ;
+}
+
+button {
+    border: 2px solid rgb(199, 18, 94);
+}
+
+.btns1 button {
+    width: 20%;
+    height: 2rem;
+}
+
+.btns2 button {
+    height: 2rem;
+}
