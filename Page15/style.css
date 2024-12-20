@@ -134,6 +134,33 @@ button {
     height: 2rem;
 }
 
+.btns1, .btns2 {
+    width: 50%;
+}
+
 .btns2 button {
     height: 2rem;
+}
+
+@media screen and (max-width: 760px ) {
+    .up .choose p {
+        font-size: 10px;
+    }
+
+    .up .choose button {
+        font-size: 10px;
+        width: 75%;
+    }
+
+    .btns1 button {
+        width: 25%;
+    }
+
+    .btns1, .btns2 {
+        width: 100%;
+    }
+
+    .con {
+        margin-left: 30%;
+    }
 }
