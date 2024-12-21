@@ -1,0 +1,109 @@
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: rgb(62, 62, 63); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 14px;
+}
+
+.language, .login, .already, hr {
+    color: rgb(199, 18, 94);
+}
+
+.profile {
+    color: rgb(133, 99, 113);
+}
+
+i {
+    font-size: 20px;
+}
+
+.txt {
+    background-color: #d8dadb;
+}
+
+.txt h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    width: 60%;
+}
+
+.op {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    color: white;
+}
+
+/*Header*/
+.logo {
+    width: 15%;
+}
+
+.about {
+    font-size: 60px;
+    font-family: 'Inter';
+}
+
+.info {
+    font-size: 12px;
+    width: 110%;
+    line-height: 200%;
+}
+
+
+/*Content*/
+
+.ttool {
+    font-family: 'Inter';
+    color: rgb(199, 18, 94);
+}
+
+.content p, ul li {
+    font-size: 12px;
+}
+
+.content ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+    .cap {
+        height: 50%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .con {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}
