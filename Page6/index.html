@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Miguel Díaz">
+  <meta name="description" content="Página 6">
+  <meta name="keywords" content="Scenarios">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page 6</title>
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!--Links-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand divider" href="#">
+        <img src="../UP.png" alt="Logo de la página web"> | <img class="w-25" src="../logo.png" alt="Logo">
+      </a>
+
+      <!--Nav Op-->
+
+      <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center op">
+        <li class="nav-item">
+          <a class="nav-link active link-light d-flex" aria-current="page" href="#">
+            <p class="pt-3 me-2">Urban Performance</p>
+            <p class="fs-5 pt-1 vis">|</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active link-light d-flex" aria-current="page" href="#">
+            <p class="pt-3 me-3">About the tool</p>
+            <p class="fs-5 pt-1 vis">|</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active link-light d-flex" aria-current="page" href="#">
+            <i class="bi bi-question-circle pt-2 me-3"></i>
+            <p class="fs-5 pt-1 vis">|</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link login d-flex" href="#contacto">
+            <p class="pt-3">Login</p>
+            <i class="bi bi-person-circle profile px-2 pt-2 me-1"></i>
+            <p class="divider fs-5 pt-1 vis">|</p>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle language" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            English
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+            <li><a class="dropdown-item" href="#">German</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--Header-->
+<div class="container-fluid d-flex flex-column txt">
+  <label class="pt-3 ps-3 fw-bold">Select city</label>
+  <div class="btn-group dropend menu ps-2 pb-4">
+    <button type="button" class="btn menu-btn text-start">
+      Cozumel
+    </button>
+    <button type="button" class="btn menu-btn dropdown-toggle dropdown-toggle-split text-end" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropend</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--Scenarios-->
+<div class="container-fluid d-flex justify-content-center align-items-center scenarios">
+  <div class="container-fluid direction">
+    <div class="e-scenarios pt-3">
+      <p class="fw-bold mb-2 sc">Scenarios</p>
+      <button class="px-4 py-1 me-5 w-75">Edit scenarios</button>
+    </div>
+    <div class="vertical my-3"></div>
+
+    <div class="container all-scenarios">
+      <!--Bau Scenario-->
+      <div class="pe-2">
+        <div class="d-flex ps-2 pt-3 me-1">
+          <img class="info pt-1 me-1" src="../Src/information.png" alt="Info">
+          <p class="fw-bold me-1 mb-1 title">BAU Scenario</p>
+        </div>
+        <p class="sc ms-4 mb-2 ">The Business as Usual (BAU) scenario depicts how the city would perform in the future
+          without interventions to promote climate-resilient cities. Under this scenario, cities would continue
+          expanding, following the same patterns historically observed.</p>
+        <p class="sc ms-4">Under the BAU scenario, investments in nature-based solutions, or new public transit lines
+          are nonexistent, instead, financial resources are concentrated on basic urban infrastructure such as new
+          roads and networks in the expansion areas and reconstruction in case of natural hazards.</p>
+      </div>
+      <div class="vertical my-3 ps-1"></div>
+
+      <!--Vision Scenario-->
+      <div class="pe-2">
+        <div class="d-flex ps-2 pt-3 me-1">
+          <img class="info pt-1 me-1" src="../Src/information.png" alt="Info">
+          <p class="fw-bold me-1 mb-1 title">Vision Scenario</p>
+        </div>
+        <p class="sc ms-4 mb-2">The Vision scenario shows the potential city performance in the future following
+          ambitious low-carbon and climate-resilient urban interventions.</p>
+        <p class="sc ms-4">Under the Vision Scenario, the assumptions might include energy efficiency and policies and
+          climate-resilient solutions thus, policies and investments would aim for a significant reduction in
+          emissions and reduced exposure to hazards.</p>
+      </div>
+      <div class="vertical my-3 ps-1"></div>
+
+      <!--My Scenario-->
+      <div>
+        <div class="d-flex ps-2 pt-3 me-1">
+          <img class="info pt-1 me-1" src="../Src/information.png" alt="Info">
+          <p class="fw-bold me-1 mb-1 title">My Scenario</p>
+        </div>
+        <p class="sc ms-4 mb-2">My Scenario allows the user to explore the potential impact of different policy
+          combinations on achieving specific goals.</p>
+        <p class="sc ms-4">This scenario is designed to be a user-friendly and interactive tool for exploring the
+          potential consequences of various policy choices. It empowers the user to test, iterate, and gain insights
+          into the complex landscape of policy interventions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Body-->
+<div class="container-fluid pt-5">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item" style="border-radius: 0;">
+      <h2 class="accordion-header">
+        <button class="accordion-button button fw-bold" style="border-radius: 0;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Policy levers
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body ps-3">
+          <!--Button-->
+          <button class="px-4 py-1 assumptions">Assumptions set up</button>
+          <hr>
+
+          <!--Urban Expansion-->
+          <div class="container-fluid d-flex urban">
+            <div class="d-flex pe-5">
+              <i class="bi bi-info-circle "></i>
+              <p class="ps-2">Urban expansion</p>
+            </div>
+            <div class="btn-group w-25 me-5">
+              <button type="button" class="btn text-start">Urban expansion Urban Footprint 2050</button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-end" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+            </div>
+
+            <div class="btn-group w-25 ms-5 me-5">
+              <button type="button" class="btn text-start">Spatial plan 2050 (60% expansion)</button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-end" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+            </div>
+
+            <div class="btn-group w-25">
+              <button type="button" class="btn text-start">Compact growth 2050 (15% expansion)</button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-end" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item" style="border-radius: 0;">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed button" style="border-radius: 0;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+/*Colors*/
+:root {
+    --primary-color: #d13b66;
+    --secondary-color: #93abbc;
+    --third-color: #8eb735;
+    --fourth-color: #d1b3c2;
+    --fifth-color: #d8dadb;
+    --sixth-color: #e7b0c6;
+}
+
+
+/*Scrollbar*/
+body {
+    background-color: #f5f7ff;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: rgb(62, 62, 63); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 14px;
+}
+
+.language, .login, .already, hr {
+    color: rgb(199, 18, 94);
+}
+
+.profile {
+    color: rgb(133, 99, 113);
+}
+
+i {
+    font-size: 20px;
+}
+
+.txt {
+    background-color: var(--fifth-color);
+
+}
+
+.txt h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    width: 60%;
+}
+
+.op {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    color: white;
+}
+
+
+/*Header*/
+.menu-btn {
+    background-color: var(--fourth-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.menu {
+    width: 10%;
+    
+}
+
+.txt label, .e-scenarios .sc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/*Scenarios*/
+.scenarios {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.scenarios button {
+    border: 2px solid var(--primary-color);
+    font-size: 12px;
+}
+
+.scenarios button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--fifth-color);
+    transition-duration: 0.2s;
+}
+
+.vertical {
+    width: 3px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: var(--fifth-color);
+}
+
+.direction {
+    display: flex;
+}
+
+.info {
+    width: 4%;
+    height: 10%;
+}
+
+.sc {
+    font-size: 11px;
+}
+
+.all-scenarios {
+    display: flex;
+}
+
+.title {
+    font-size: 12px;
+}
+
+/*Body*/
+
+/*Policy Levers*/
+.button {
+    background-color: var(--fifth-color);
+}
+
+.assumptions {
+    font-size: 12px;
+    border: 1px solid var(--primary-color);
+}
+
+.assumptions:hover {
+    border: 1px solid var(--fifth-color);
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+hr{
+    background-color: black;
+    border: 1px dashed var(--fifth-color);
+}
+
+i{
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.urban p{
+    font-size: 0.8rem;
+}
+
+.urban .btn-group button {
+    border-radius: 0;
+    font-size: 11px;
+}
+
+.urban .btn-group:nth-of-type(2) {
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+}
+
+.urban .btn-group:nth-of-type(2):hover {
+    background-color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.urban .btn-group:nth-of-type(3) {
+    border: 2px solid var(--sixth-color);
+    border-radius: 2px;
+}
+
+.urban .btn-group:nth-of-type(3):hover {
+    background-color: var(--sixth-color);
+    transition-duration: 0.3s;
+}
+
+.urban .btn-group:nth-of-type(4) {
+    border: 2px solid var(--third-color);
+    border-radius: 2px;
+}
+
+.urban .btn-group:nth-of-type(4):hover {
+    background-color: var(--third-color);
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .all-scenarios {
+        flex-direction: column;
+    }
+
+    .vertical {
+        width: 0;
+        height: 0;
+    }
+
+    .direction {
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .direction * {
+        padding: 0;
+        margin: 0;
+    }
+}
