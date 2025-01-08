@@ -162,11 +162,11 @@ hr{
 
 i{
     color: var(--primary-color);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .urban p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .urban .btn-group button {
@@ -202,6 +202,233 @@ i{
 .urban .btn-group:nth-of-type(4):hover {
     background-color: var(--third-color);
     transition-duration: 0.3s;
+}
+
+.urban:nth-of-type(1) .btn-group:nth-of-type(2) {
+    margin-left: 55px;
+}
+
+.urban:nth-of-type(2) .btn-group:nth-of-type(2) {
+    margin-left: 75px;
+}
+
+/*Blue Switch*/
+.toggle-container1 {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.toggle-container1 .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-container1 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-container1 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: .4s;
+}
+
+.toggle-container1 .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.toggle-container1 input:checked + .slider {
+    background-color: var(--secondary-color);
+}
+
+.toggle-container1 input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: white;
+}
+
+.toggle-container1 .slider::after {
+    content: 'OFF';
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.toggle-container1 input:checked + .slider::after {
+    content: 'ON';
+    left: 8px;
+    color: white;
+}
+
+/*Pink Switch*/
+.toggle-container2 {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.toggle-container2 .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-container2 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-container2 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: .4s;
+}
+
+.toggle-container2 .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--sixth-color);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.toggle-container2 input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+.toggle-container2 input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: white;
+}
+
+.toggle-container2 .slider::after {
+    content: 'OFF';
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.toggle-container2 input:checked + .slider::after {
+    content: 'ON';
+    left: 8px;
+    color: white;
+}
+
+/*Green Switch*/
+.toggle-container3 {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.toggle-container3 .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-container3 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-container3 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: .4s;
+}
+
+.toggle-container3 .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.toggle-container3 input:checked + .slider {
+    background-color: var(--third-color);
+}
+
+.toggle-container3 input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: white;
+}
+
+.toggle-container3 .slider::after {
+    content: 'OFF';
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.toggle-container3 input:checked + .slider::after {
+    content: 'ON';
+    left: 8px;
+    color: white;
+}
+
+/*Maps*/
+.ch:checked {
+    background-color: var(--primary-color);
+    border-radius: 0;
+}
+
+.circle {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
