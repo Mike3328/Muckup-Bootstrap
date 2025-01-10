@@ -431,6 +431,42 @@ i{
     border-radius: 50%;
 }
 
+
+.stats .progress, .progress .progress-bar {
+    border-radius: 0;
+}
+
+.stats .container:nth-of-type(2) .progress {
+    border: 1px solid var(--secondary-color);
+}
+.stats .container:nth-of-type(3) .progress {
+    border: 1px solid var(--primary-color);
+}
+.stats .container:nth-of-type(4) .progress {
+    border: 1px solid var(--third-color);
+}
+
+.generate {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--fifth-color);
+    width: 20%;
+}
+
+.generate button {
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin-left: 15%;
+}
+
+.generate button:hover {
+    background-color: var(--sixth-color);
+    transition-duration: 0.5s;
+}
+
+
 @media screen and (max-width: 768px) {
     .all-scenarios {
         flex-direction: column;
