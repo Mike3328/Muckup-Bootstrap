@@ -83,8 +83,6 @@
   </div>
 </nav>
 
-
-
 <!--Header-->
 <div class="container-fluid d-flex flex-column txt">
   <label class="pt-3 ps-3 fw-bold">Select city</label>
@@ -174,12 +172,13 @@
           <!--Button-->
           <button class="px-4 py-1 assumptions">Assumptions set up</button>
           <hr>
-
           <!--Urban Expansion-->
           <div class="container-fluid d-flex urban">
-            <div class="d-flex pe-5">
-              <i class="bi bi-info-circle "></i>
-              <p class="ps-2">Urban expansion</p>
+            <div class="d-flex pe-4">
+              <button type="button" class="btn d-flex m-0 p-0 pt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-2 p-0 m-0">Urban expansion</p>
+              </button>
             </div>
             <div class="btn-group w-25">
               <button type="button" class="btn text-start">Urban expansion Urban Footprint 2050</button>
@@ -206,12 +205,14 @@
 
           <!--Public Transit-->
           <div class="container-fluid d-flex urban">
-            <div class="d-flex pe-5">
-              <i class="bi bi-info-circle "></i>
-              <p class="ps-2">Public Transit</p>
+            <div class="d-flex pe-4">
+              <button type="button" class="btn d-flex m-0 p-0 pt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-2 p-0 m-0">Public Transit</p>
+              </button>
             </div>
             <div class="btn-group w-25">
-              <button type="button" class="btn text-start">Bus lines (2023)</button>
+              <button type="button" class="btn text-start">Urban expansion Urban Footprint 2050</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-end" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
@@ -235,9 +236,11 @@
 
           <!--Residential energy efficiency-->
           <div class="container-fluid d-flex urban">
-            <div class="d-flex pe-4">
-              <i class="bi bi-info-circle "></i>
-              <p class="ps-2">Residential energy efficiency</p>
+            <div class="d-flex">
+              <button type="button" class="btn d-flex m-0 p-0 pt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="p-0 m-0 ps-1">Residential energy efficiency</p>
+              </button>
             </div>
             <div class="container w-25 p-0 m-0 mt-2 me-2 ms-4">
               <div class="progress h-25" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -262,11 +265,12 @@
 
           <!--Risk mitigation-->
           <div class="container-fluid d-flex urban">
-            <div class="d-flex pe-5 mt-3">
-              <i class="bi bi-info-circle "></i>
-              <p class="ps-2 pe-3">Risk mitigation</p>
+            <div class="d-flex pe-5">
+              <button type="button" class="btn d-flex m-0 p-0 pt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Risk mitigation</p>
+              </button>
             </div>
-            
             <div class="w-25 d-flex">
               <p class="mt-3 ms-5">Nature based solutions</p>
               <div class="toggle-container1 ms-2 me-5">
@@ -317,22 +321,30 @@
 
               <div class="d-flex">
                 <input type="checkbox" class="mt-3 m-0 p-0 me-1 ch form-check-input">
-                <i class="bi bi-info-circle mt-3 m-0 p-0"></i>
+                <button type="button" class="btn d-flex m-0 p-0 mt-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                  <i class="bi bi-info-circle m-0 p-0"></i>
+                </button>
                 <p style="font-size: 0.7rem;" class="mt-3 ms-1 m-0 p-0">Show urban footprint</p>
               </div>
               <div class="d-flex">
                 <input type="checkbox" class="mt-2 m-0 p-0 me-1 ch form-check-input">
-                <i class="bi bi-info-circle mt-2 m-0 p-0"></i>
+                <button type="button" class="btn d-flex m-0 p-0 mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                  <i class="bi bi-info-circle m-0 p-0"></i>
+                </button>                
                 <p style="font-size: 0.7rem;" class="mt-2 ms-1 m-0 p-0">Show public transit lines</p>
               </div>
               <div class="d-flex">
                 <input type="checkbox" class="mt-2 m-0 p-0 me-1 ch form-check-input">
-                <i class="bi bi-info-circle mt-2 m-0 p-0"></i>
+                <button type="button" class="btn d-flex m-0 p-0 mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                  <i class="bi bi-info-circle m-0 p-0"></i>
+                </button>
                 <p style="font-size: 0.7rem;" class="mt-2 ms-1 m-0 p-0">Show areas prone to flooding</p>
               </div>
               <div class="d-flex">
                 <input type="checkbox" class="mt-2 m-0 p-0 me-1 ch form-check-input">
-                <i class="bi bi-info-circle mt-2 m-0 p-0"></i>
+                <button type="button" class="btn d-flex m-0 p-0 mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                  <i class="bi bi-info-circle m-0 p-0"></i>
+                </button>
                 <p style="font-size: 0.7rem;" class="mt-2 ms-1 m-0 p-0">Show nature based solutions</p>
               </div>
 
@@ -343,12 +355,12 @@
               <div class="d-flex">
                 <div class="circle mt-1 me-2" style="background-color: var(--secondary-color);"></div>
                 <div class="container-fluid m-0 p-0">
-                  <p style="font-size: 11px;" class="fw-bold m-0 mb-1">Urban expansion</p>
+                  <p style="font-size: 11px;" class="fw-bold m-0 mb-1 p-0">Urban expansion</p>
                   <div class="progress h-25 w-75 m-0 p-0" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar w-75" style="background-color: var(--secondary-color);"></div>
-                  </div>
-                  <p class="w-25" style="font-size: 0.7rem; position: absolute; left: 22%;">80%</p>                  
+                  </div>                  
                 </div>
+                <p style="font-size: 0.7rem; position: absolute; margin-left: 17%; margin-top: 1% ;">80%</p>
               </div>
               
               <div class="d-flex">
@@ -359,6 +371,7 @@
                     <div class="progress-bar w-0"></div>
                   </div>
                 </div>
+                <p style="font-size: 0.7rem; position: absolute; margin-left: 17%; margin-top: 3% ;">0%</p>
               </div>
 
               <div class="d-flex">
@@ -369,6 +382,7 @@
                     <div class="progress-bar w-50" style="background-color: var(--third-color);"></div>
                   </div>
                 </div>
+                <p style="font-size: 0.7rem; position: absolute; margin-left: 17%; margin-top: 2.7% ;">50%</p>
               </div>
               
               
@@ -392,10 +406,12 @@
       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
         <div class="accordion-body">
           <!--First-->
-          <div class="container-fluid d-flex urban pt-3 stats p-0 m-0">
+          <div class="container-fluid d-flex urban stats p-0 m-0">
             <div class="d-flex container-fluid p-0 m-0" style="width: 20%;">
-              <i class="bi bi-info-circle"></i>
-              <p class="ps-2">Residential energy efficiency</p>
+              <button type="button" class="btn d-flex p-0 m-0 pb-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Residential energy efficiency</p>
+              </button>
             </div>
             <div class="container p-0 m-0 w-25">
               <div class="container-fluid d-flex">
@@ -427,8 +443,10 @@
           <!--Second-->
           <div class="container-fluid d-flex urban pt-3 stats p-0 m-0">
             <div class="d-flex container-fluid p-0 m-0" style="width: 20%;">
-              <i class="bi bi-info-circle"></i>
-              <p class="ps-2">Energy consumption kWh/a/capita</p>
+              <button type="button" class="btn d-flex p-0 m-0 pb-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Energy consumption kWh/a/capita</p>
+              </button>
             </div>
             <div class="container p-0 m-0 w-25">
               <div class="container-fluid d-flex">
@@ -460,8 +478,10 @@
           <!--Third-->
           <div class="container-fluid d-flex urban pt-3 stats p-0 m-0">
             <div class="d-flex container-fluid p-0 m-0" style="width: 20%;">
-              <i class="bi bi-info-circle"></i>
-              <p class="ps-2">Population exposed to flooding (%)</p>
+              <button type="button" class="btn d-flex p-0 m-0 pb-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Population exposed to flooding (%)</p>
+              </button>
             </div>
             <div class="container p-0 m-0 w-25">
               <div class="container-fluid d-flex">
@@ -493,8 +513,10 @@
           <!--Fourth-->
           <div class="container-fluid d-flex urban pt-3 stats p-0 m-0">
             <div class="d-flex container-fluid p-0 m-0" style="width: 20%;">
-              <i class="bi bi-info-circle"></i>
-              <p class="ps-2">Capital costs Million USD/a</p>
+              <button type="button" class="btn d-flex p-0 m-0 pb-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Capital costs Million USD/a</p>
+              </button>
             </div>
             <div class="container p-0 m-0 w-25">
               <div class="container-fluid d-flex">
@@ -526,8 +548,10 @@
           <!--Fifth-->
           <div class="container-fluid d-flex urban pt-3 stats p-0 m-0">
             <div class="d-flex container-fluid p-0 m-0" style="width: 20%;">
-              <i class="bi bi-info-circle"></i>
-              <p class="ps-2">Municipal service costs Million USD</p>
+              <button type="button" class="btn d-flex p-0 m-0 pb-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                <i class="bi bi-info-circle"></i>
+                <p class="ps-1 p-0 m-0">Municipal service costs Million USD</p>
+              </button>
             </div>
             <div class="container p-0 m-0 w-25">
               <div class="container-fluid d-flex">
@@ -564,31 +588,11 @@
   <button class="py-2 w-75">Generate report</button>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+<script src="script.js"></script>
 <br><br>
 <br><br>
 <br><br>
 </body>
-
 </html>
