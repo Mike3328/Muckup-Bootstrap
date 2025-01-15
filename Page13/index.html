@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!--Navbar-->
@@ -103,7 +104,108 @@
       <h2>My Projects</h2>
     </div>
     <div class="col-6 d-flex justify-content-end align-items-end pb-5">
-      <button class="text-light project-btn p-2 px-4">Create a new project +</button>
+      <!-- Button trigger modal -->
+      <button class="text-light project-btn p-2 px-4" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new project +</button>
+
+      <!-- Modal -->
+      <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container bg-light con">
+                <!--Header-->
+                <div class="container text-center d-flex flex-column justify-content-center align-items-center">
+                    <h3>New project</h3>
+                    <div class="divider-project"></div>
+                </div>
+        
+                <!--Info-->
+                <div class="container d-flex pt-5">
+                    <button type="button" class="btn m-0 p-0 pb-5 me-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                      <i class="bi bi-info-circle" style="color: var(--primary-color);"></i>
+                    </button>
+                    <h6 class="fw-bold">Urban Footprint</h6>
+                    <p class="ps-5 pinfo">You can create a GeoJson file in QGIS or in ArcGis. The file should have at least one polygon describing the urban footprint. Layer name is the name that will be displayed on the policy lever drop down menu. <span class="span">The file should include at least two attributes: ID (with a unique identifier) and DENSITY (describing the population density in inhabitants per hectare for each polygon).</span> </p>
+                </div>
+                
+                <!--Upload-->
+                <div class="container d-flex justify-content-end pt-5 up">
+                    <div class="container d-flex flex-column justify-content-center align-items-center upload p-0 m-0">
+                        <img class="w-25" src="../Src/cloud.png" alt="Cloud">
+                        <img class="z-3 position-absolute pb-4" src="../Src/upload.png" alt="Upload">
+                        <p class="fw-bold">Drag and drop</p>
+                    </div>
+                    <div class="container d-flex flex-column align-items-center upload p-0 m-0 mx-3 choose">
+                        <p class="pt-3">Or choose your file</p>
+                        <button class="b1">Browse your files</button>
+                        <p class="p-0 m-0 pt-3">Supported file type: geojson</p>
+                        <p class="p-0 m-0 download">Download example file</p>
+                        <div class="div"></div>
+                    </div>
+                </div>
+        
+                <!--Table-->
+                <div class="container pt-5 tb">
+                    <table class="table text-center">
+                        <thead>
+                            <tr class="table-dark">
+                                <th class="name" style="border: 0; border-right: 3px solid white;">Name</th>
+                                <th class="categorie">Categorie</th>
+                                <th class="description">Description</th>
+                                <th class="download">Download</th>
+                                <th class="edit px-5">Edit</th>
+                                <th class="delete">Delete</th>
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            <tr class="table-secondary urban">
+                                <td><input type="text" placeholder="__Add name" value="Urban footprint from 2024"></td>
+                                <td class="type">uf_2024.geojson</td>
+                                <td><input type="text" placeholder="__Add description" value="Urban footprint retrieved from LANDSAT."></td>
+                                <td><i class="bi bi-download fs-5 px-1"></i></td>
+                                <td><i class="bi bi-pencil-square fs-5 mx-3 px-1"></i></td>
+                                <td><i class="bi bi-trash fs-5 px-1"></i></td>
+                            </tr>
+                            <tr class="table-secondary urban">
+                                <td><input type="text" placeholder="__Add name" value="Urban footprint as described in the Master Plan 2050"></td>
+                                <td class="type">up_plan_2050.geojson</td>
+                                <td><input type="text" placeholder="__Add description" value="Urban footprint retrieved from the Municipal Master Plan, 2025-2050."></td>
+                                <td><i class="bi bi-download fs-5 px-1"></i></td>
+                                <td><i class="bi bi-pencil-square fs-5 mx-3 px-1"></i></td>
+                                <td><i class="bi bi-trash fs-5 px-1"></i></td>
+                            </tr>
+                            <tr class="table-secondary urban">
+                                <td><input type="text" placeholder="__Add name"></td>
+                                <td class="type">up_vision_2050.geojson</td>
+                                <td><input type="text" placeholder="__Add description"></td>
+                                <td><i class="bi bi-download fs-5 px-1"></i></td>
+                                <td><i class="bi bi-pencil-square fs-5 mx-3 px-1"></i></td>
+                                <td><i class="bi bi-trash fs-5 px-1"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                    <!--Btns-->
+                    <div class="container d-flex justify-content-center align-items-center btns1">
+                        <button class="me-5" style="font-size: 11px;"><< Go Back</button>
+                        <button style="font-size: 11px;">Next >></button>
+                    </div>
+                    <div class="container d-flex justify-content-center align-items-center pt-4 btns2">
+                        <button class="me-5 w-50" style="font-size: 11px;">Don't save changes</button>
+                        <button class="w-50" style="font-size: 11px;">Save changes</button>
+                    </div>
+                </div>
+                <br><br>
+                <br><br>
+            </div>
+            <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -141,9 +243,9 @@
           <input class="form-check-input" type="checkbox" id="checkboxNoLabel">
         </td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
     <tr class="table-secondary">
@@ -151,9 +253,9 @@
         <td class="c">Dec 1, 2023</td>
         <td class="c"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"></td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
     <tr class="table-secondary">
@@ -162,9 +264,9 @@
         <td class="c">Mar 20, 2022</td>
         <td class="c"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"></td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
     <tr class="table-secondary">
@@ -172,9 +274,9 @@
         <td class="c">Oct 18, 2023</td>
         <td class="c"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"></td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
     <tr class="table-secondary">
@@ -182,9 +284,9 @@
         <td class="c">Jan 22, 2024</td>
         <td class="c"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"></td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
     <tr class="table-secondary">
@@ -192,15 +294,16 @@
         <td class="c">Jun 6, 2023</td>
         <td class="c"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"></td>
         <td class="c">
-            <img src="../Src/edit.png" alt="Edit">
-            <img class="mx-3" src="../Src/view.png" alt="View">
-            <img src="../Src/download.png" alt="Download">
+          <i class="bi bi-pencil-square fs-5 px-1"></i>            
+          <i class="bi bi-eye fs-5 mx-3 px-1"></i>
+          <i class="bi bi-download fs-5 px-1"></i>
         </td>
     </tr>
   </table>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 <br><br>
 </body>
 </html>

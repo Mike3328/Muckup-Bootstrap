@@ -1,3 +1,13 @@
+/*Colors*/
+:root {
+    --primary-color: #d13b66;
+    --secondary-color: #dce0ea;
+    --third-color: #d8a7b9;
+    --fourth-color: rgba(72,57,67,1);
+    --fifth-color: #212121;
+    --scroll: rgb(62, 62, 63);
+}
+
 /*Scrollbar*/
 body::-webkit-scrollbar {
     width: 8px;   
@@ -29,8 +39,7 @@ h3 {
 .divider {
     width: 13%;
     height: 2px;
-    background-color: rgb(199, 18, 94);
-    
+    background-color: var(--primary-color);
 }
 
 .cancel {
@@ -51,13 +60,13 @@ h3 {
 }
 
 span {
-    color: rgb(199, 18, 94);
+    color: var(--primary-color);
 }
 
 /*Upload*/
 
 .upload {
-    border: 2px dashed #d8dadb;
+    border: 2px dashed var(--secondary-color);
     width: 40%;
     height: 10rem;
 }
@@ -77,17 +86,17 @@ button {
 .b1 {
     width: 40%;
     height: 2rem;
-    border: 2px solid rgb(199, 18, 94);
+    border: 2px solid var(--primary-color);
 }
 
 .div {
     height: 2px;
     width: 35%;
-    background-color: rgb(199, 18, 94);
+    background-color: var(--primary-color);
 }
 
 .download {
-    color: rgb(199, 18, 94);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -117,16 +126,27 @@ table img {
     cursor: pointer;
 }
 
+.urban i {
+    background-color: white;
+    cursor: pointer;
+}
+
+.urban i:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 0.3s;
+}
+
 /*Btns*/
 
 button:hover {
-    background-color: rgb(199, 18, 94);
+    background-color: var(--primary-color);
     color: white;
     transition-duration: 0.3s ;
 }
 
 button {
-    border: 2px solid rgb(199, 18, 94);
+    border: 2px solid var(--primary-color);
 }
 
 .btns1 button {

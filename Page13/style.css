@@ -1,3 +1,13 @@
+/*Colors*/
+:root {
+    --primary-color: #d13b66;
+    --secondary-color: #dce0ea;
+    --third-color: #d8a7b9;
+    --fourth-color: rgba(72,57,67,1);
+    --fifth-color: #212121;
+    --scroll: rgb(62, 62, 63);
+}
+
 /*Scrollbar*/
 body::-webkit-scrollbar {
     width: 8px;   
@@ -9,7 +19,7 @@ body::-webkit-scrollbar-track {
   
 body::-webkit-scrollbar-thumb {
     position: fixed;
-    background-color: rgb(62, 62, 63); 
+    background-color: var(--scroll); 
     border-radius: 20px;  
     border: 10px solid transparent;
 }
@@ -18,17 +28,17 @@ body::-webkit-scrollbar-thumb {
 
 
 .navbar {
-    background-color: rgb(31, 31, 31);
+    background-color: var(--fifth-color);
     color: white;
     font-size: 14px;
 }
 
 .language, .login, .already, hr {
-    color: rgb(199, 18, 94);
+    color: var(--primary-color);
 }
 
 .profile {
-    color: rgb(133, 99, 113);
+    color: var(--third-color);
     font-size: 100px;
     
 }
@@ -49,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 
 /*Header*/
 .txt {
-    background-color: #d8dadb;
+    background-color: var(--secondary-color);
 }
 
 h2 {
@@ -84,20 +94,20 @@ h2 {
 
 /*Header*/
 .project-btn {
-    background-color: rgb(199, 18, 94);
+    background-color: var(--primary-color);
     border: none;
     font-size: 12px;
 }
 
 .project-btn:hover {
-    background-color: rgb(255, 39, 129);
+    background-color: var(--primary-color);
     border: 2px solid rgb(82, 80, 80);
     transition-duration: 0.2s;
 }
 
 /*Filters*/
 .name, .date, .filter-btn {
-    border: 2px solid rgb(199, 18, 94);
+    border: 2px solid var(--primary-color);
 }
 
 .date {
@@ -110,15 +120,15 @@ h2 {
 }
 
 .filter-btn:hover {
-    background-color: rgb(199, 18, 94);
-    border: 1px solid #d8dadb;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     transition-duration: 0.2s;
 }
 
 /*Table*/
 
 table {
-    background-color: #d8dadb;
+    background-color: var(--secondary-color);
 }
 
 tr {
@@ -147,8 +157,8 @@ tr {
     width: 15%;
 }
 
-.ch:checked {
-    background-color: rgb(199, 18, 94);
+.form-check-input:checked {
+    background-color: var(--primary-color);
 }
 
 table img {
@@ -156,6 +166,151 @@ table img {
     cursor: pointer;
     background-color: white;
     padding: 2px;
+}
+
+/*------Modal----------*/
+.modal {
+    background-color: var(--fourth-color);
+    background: transparent;
+    border-radius: none;
+}
+
+/*Header*/
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divider-project {
+    width: 13%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/*Info*/
+.question {
+    width: 1rem;
+    height: 1rem;
+}
+
+.pinfo {
+    font-size: 12px;
+    width: 80%;
+}
+
+.span {
+    color: var(--primary-color);
+}
+
+/*Upload*/
+.upload {
+    border: 2px dashed var(--secondary-color);
+    width: 40%;
+    height: 10rem;
+}
+
+.up p {
+    font-family: 'Inter', sans-serif;
+}
+
+.up .choose p {
+    font-size: 13px;
+}
+
+
+.b1 {
+    width: 40%;
+    font-size: 11px;
+    height: 2rem;
+    border: 2px solid var(--primary-color);
+}
+
+.b1:hover {
+    background-color: var(--primary-color);
+    border: 2px solid;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.div {
+    height: 2px;
+    width: 35%;
+    background-color: var(--primary-color);
+}
+
+.download {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*Table*/
+table img {
+    background-color: white;
+}
+
+.edit {
+    width: 1px;
+}
+
+table th {
+    border-right: 4px solid white;
+}
+
+tbody tr td {
+    border-right: 4px solid transparent;
+}
+
+.urban td {
+    border-bottom: 1px solid black;
+}
+
+table img {
+    cursor: pointer;
+}
+
+.c i {
+    background-color: white;
+    cursor: pointer;
+}
+
+.c i:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.urban i {
+    background-color: white;
+    cursor: pointer;
+}
+
+.urban i:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+/*Btns*/
+button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition-duration: 0.3s ;
+}
+
+button {
+    border: 2px solid var(--primary-color);
+}
+
+.btns1 button {
+    width: 20%;
+    height: 2rem;
+}
+
+.btns1, .btns2 {
+    width: 50%;
+}
+
+.btns2 button {
+    height: 2rem;
 }
 
 /*Navbar dividers*/
